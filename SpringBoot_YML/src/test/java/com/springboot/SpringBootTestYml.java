@@ -8,6 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
+import com.springboot.entity.LogProperties;
 import com.springboot.entity.Person;
 
 @RunWith(SpringRunner.class)
@@ -19,9 +20,13 @@ public class SpringBootTestYml {
 	
 	@Autowired
 	private Map<String, String> mysqlParam;
+	
+	@Autowired
+	private LogProperties logProperties;
 	@Test
 	public void contextLoad() {
 		System.out.println(person);
 		System.out.println(mysqlParam);
+		System.out.println(logProperties);
 	}
 }
