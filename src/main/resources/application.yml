@@ -1,0 +1,15 @@
+server:
+  port: 8081
+
+person:
+  name: 张珊
+  birthday: 1990/09/10
+  dog:
+    name: 旺财
+    age: 1
+  friends:
+    - 张柳
+    - 赵琦
+  family:
+    mother: 海燕
+    father: 海坤
