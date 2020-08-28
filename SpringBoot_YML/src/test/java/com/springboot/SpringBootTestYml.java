@@ -1,5 +1,7 @@
 package com.springboot;
 
+import java.util.Map;
+
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,8 +16,12 @@ public class SpringBootTestYml {
 
 	@Autowired
 	private Person person;
+	
+	@Autowired
+	private Map<String, String> mysqlParam;
 	@Test
 	public void contextLoad() {
 		System.out.println(person);
+		System.out.println(mysqlParam);
 	}
 }

@@ -13,3 +13,9 @@ person:
   family:
     mother: 海燕
     father: 海坤
+
+mysql: 
+  user-name: root
+  password: qds55344679
+  url: jdbc:mysql://localhost:3306/db_diary?useSSL=false&serverTimezone=UTC&characterEncoding=utf8
+  driver-name: com.mysql.cj.jdbc.Driver 
